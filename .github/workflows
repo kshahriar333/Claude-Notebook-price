@@ -1,1 +1,51 @@
+name: UCC Price Monitor
 
+on:
+  schedule:
+    - cron: "0 * * * *"        # every hour (GitHub may delay a few minutes)
+  workflow_dispatch:
+    inputs:
+      send_report:
+        description: "Send full price report to Telegram"
+        type: boolean
+        default: true
+
+concurrency:
+  group: price-monitor
+  cancel-in-progress: false
+
+permissions:
+  contents: write              # needed to save state.json
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run price monitor
+        run: python monitor.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          FORCE_REPORT: ${{ github.event.inputs.send_report == 'true' && '1' || '' }}
+
+      - name: Save last prices
+        run: |
+          git config user.name "price-bot"
+          git config user.email "price-bot@users.noreply.github.com"
+          git add state.json
+          if git diff --cached --quiet; then
+            echo "No price change to save."
+          else
+            git commit -m "Update saved prices [skip ci]"
+            git push
+          fi
