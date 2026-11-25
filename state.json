@@ -16,10 +16,10 @@
     },
     "Techland": {
       "alerted": false,
-      "fails": 0,
+      "fails": 1,
       "price": 77500,
-      "sku_status": "VERIFIED",
-      "status": "OK"
+      "sku_status": "UNVERIFIED",
+      "status": "BLOCKED"
     },
     "UCC": {
       "alerted": false,
