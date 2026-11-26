@@ -1,1 +1,279 @@
-{}
+{
+  "__meta__": {
+    "warned": [
+      "listing_short"
+    ]
+  },
+  "https://www.ucc.com.bd/acer-aspire-15-as15-42-r5-ryzen-5-7430u-16gb-82-ddr4-3200mhz-512gb-nvme-ssd-156-inch-fhd-ips-backlit-55whr-pure-silver": {
+    "UCC": {
+      "price": 77500,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "VERIFIED"
+    },
+    "Ryans": {
+      "price": 77500,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "VERIFIED"
+    },
+    "Star Tech": {
+      "price": 77500,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "VERIFIED"
+    },
+    "Techland": {
+      "price": 77500,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "VERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/msi-vector-16-hx-ai-a2xwig-intel-core-ultra-9-275hx-rtx-5080-gaming-laptop?limit=100": {
+    "UCC": {
+      "price": 519900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/msi-creator-a16-ai-a3hvfg-ryzen-ai-9-365-rtx-4060-6gb-graphics-qhd-oled-240hz-gaming-laptop?limit=100": {
+    "UCC": {
+      "price": 299900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/index.php?route=product/product&product_id=5182": {
+    "UCC": {
+      "price": 279900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/MSI-Katana-15-HX-B14WGK-Intel-Core-i7-14th-Gen-14650HX-RTX-5070-8GB-Graphics-16GB-DDR5-RAM-15.6-Inch-QHD-165Hz-Gaming-Laptop?limit=100": {
+    "UCC": {
+      "price": 233900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/msi-prestige-14-ai-evo-c2vmg-intel-core-ultra-7-258v-intel-arc-graphics-oled-laptop?limit=100": {
+    "UCC": {
+      "price": 221900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/MSI-Katana-15-HX-B14WFK-Intel-Core-i7-14th-Gen-14650HX-RTX-5060-8GB-Graphics-16GB-DDR5-RAM-15.6-Inch-QHD-165Hz-Gaming-Laptop?limit=100": {
+    "UCC": {
+      "price": 197900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/index.php?route=product/product&product_id=5730": {
+    "UCC": {
+      "price": 179900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/msi-cyborg-15-b2rwekg-intel-core-5-210h-rtx-5050-gddr7-8gb-graphics-16gb-82-ddr5-ram-512gb-nvme-ssd156-fhd-144hz-gaming-laptop?limit=100": {
+    "UCC": {
+      "price": 169900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/msi-cyborg-15-a13ve-intel-core-i5-13th-gen-13420h-rtx-4050-gddr6-6gb-graphics-8gb-ddr5-5200mhz-ram-512gb-nvme-ssd156-fhd-144hz-gaming-laptop?limit=100": {
+    "UCC": {
+      "price": 135900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/msi-thin-a15-b7uc-675bd-amd-ryzen-7-7735hs-rtx-3050-4gb-gddr6-28gb-16-gb-ddr5-ram-1-tb-gen4-nvme-ssd-156-inch-fhd-144hz-gaming-laptop?limit=100": {
+    "UCC": {
+      "price": 129900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/msi-thin-15-b13ve-intel-core-i5-13420h-rtx-4050-6gb144hz-gaming-laptop?limit=100": {
+    "UCC": {
+      "price": 127900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/msi-modern-14-h-d2rmg-intel-core-7-240h-intel-graphics-16-gb-3200mhz-ram-512gb-gen4-nvme-ssd-14-inch-fhd-ips-platinum-black-laptop?limit=100": {
+    "UCC": {
+      "price": 113900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/acer-aspire-7-a715-79g-intel-core-5-210h-16gb-ddr4-512-pcie-nvme-rtx-3050-4gb-graphics-fhd-ips-144hz-flame-black-gaming-laptop?limit=100": {
+    "UCC": {
+      "price": 109900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/apple-macbook-neo-13-inch-a18-pro-8gb-512gb-laptop-silver?limit=100": {
+    "UCC": {
+      "price": 109000,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/apple-macbook-neo-13-inch-a18-pro-8gb-512gb-laptop-blush?limit=100": {
+    "UCC": {
+      "price": 109000,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/apple-macbook-neo-blush-13-inch-a18-pro-8gb-unified-memory-256gb-ssd?limit=100": {
+    "UCC": {
+      "price": 97000,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/apple-macbook-neo-13-inch-a18-pro-8gb-unified-memory-256gb-ssd-silver?limit=100": {
+    "UCC": {
+      "price": 97000,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/acer-travellite-tl14-52m-intel-13th-gen-core-i5-1335u-intel-iris-xe-graphics-business-laptop?limit=100": {
+    "UCC": {
+      "price": 88000,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/acer-aspire-3-a325-53-i5-1334u-un34ysi024-laptop?limit=100": {
+    "UCC": {
+      "price": 81900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    },
+    "Star Tech": {
+      "price": 81900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "VERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/acer-aspire-3-a325-53-i3-1305u-un34ysi025-laptop?limit=100": {
+    "UCC": {
+      "price": 71900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    },
+    "Star Tech": {
+      "price": 71900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "VERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/acer-aspire-3-a324-53-core-3-100u-un34rsi01x-laptop?limit=100": {
+    "UCC": {
+      "price": 67900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    },
+    "Star Tech": {
+      "price": 67900,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "VERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/acer-aspire-15-as15-42-r3-UN-35MSI-00U-ryzen-3-7330u-8gb-ddr4-3200mhz-512gb-nvme-ssd-15-inch-fhd-ips-55whr-pure-silver-laptop?limit=100": {
+    "UCC": {
+      "price": 64500,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    },
+    "Star Tech": {
+      "price": 64500,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "VERIFIED"
+    }
+  },
+  "https://www.ucc.com.bd/acer-aspire-3-a325-42-ryzen-3-5300u-un37gsi007-laptop?limit=100": {
+    "UCC": {
+      "price": 59000,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "UNVERIFIED"
+    },
+    "Star Tech": {
+      "price": 59000,
+      "status": "OK",
+      "fails": 0,
+      "alerted": false,
+      "sku_status": "VERIFIED"
+    }
+  }
+}
