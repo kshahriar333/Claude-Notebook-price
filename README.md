@@ -1,41 +1,51 @@
-# UCC Price Monitor
+# UCC Laptop Price Monitor
 
-Watches the SAME product on UCC, Ryans, Star Tech and Techland.
-Sends a Telegram message when any price goes up or down.
+Watches ALL laptops on https://www.ucc.com.bd/laptops and the same laptops on
+Ryans, Star Tech and Techland. Sends a Telegram message when any price changes.
 
-## How matching works
-- You give the exact product link for each website in `products.json`.
-- The bot opens each page, reads the SKU / part number, and checks it equals the UCC SKU.
-- If a page shows a different SKU, the bot does NOT compare the price. It warns you.
-- If nothing changes, the bot sends nothing.
+## How it works
+1. Reads every laptop on the UCC laptops page (all pages). A new laptop on UCC is added automatically.
+2. Reads the SKU / part number from each UCC laptop page.
+3. Searches that SKU on Ryans, Star Tech and Techland. A match is kept ONLY if the
+   product page shows the same SKU. Different variants (RAM / colour) are never mixed.
+4. Every hour it reads all prices and messages you only when something changes.
+5. Laptops not found on a site are searched again once a day.
 
-## Setup (10 minutes)
-1. Telegram: message @BotFather -> /newbot -> copy the token.
-   Send any message to your new bot, then open
-   https://api.telegram.org/bot<TOKEN>/getUpdates and copy `"chat":{"id": ...}`.
-2. Create a PRIVATE GitHub repo. Upload ALL files from this zip (including the `.github` folder).
-3. Repo -> Settings -> Secrets and variables -> Actions -> New secret:
-   - `TELEGRAM_BOT_TOKEN`
-   - `TELEGRAM_CHAT_ID`
-4. Repo -> Settings -> Actions -> General -> Workflow permissions -> "Read and write permissions" -> Save.
-5. Actions tab -> "UCC Price Monitor" -> Run workflow. You should get a Telegram report.
-   After that it runs every hour.
+## Telegram messages you get
+- 🔻 / 🔺  a price went down / up (UCC or competitor), with "cheaper / higher than UCC"
+- 🆕  a new laptop was added on UCC (more than 3 new -> one summary)
+- 🔗  a laptop was found on a competitor site later
+- 🗑️  a laptop is gone from the UCC list (after 3 checks)
+- ⚠️  a page is blocked / cannot be read / shows a different SKU (sent once)
+- 📊  full report: run the workflow by hand (Actions -> Run workflow)
 
-## Add more products
-Copy one block in `products.json`, paste the 4 links. `sku` is optional
-(if missing, it is read from the UCC page).
+## Setup
+1. Telegram: @BotFather -> /newbot -> copy token. Open
+   https://api.telegram.org/bot<TOKEN>/getUpdates after messaging your bot, copy chat id.
+2. Private GitHub repo. Upload ALL files (including the `.github` folder).
+3. Settings -> Secrets and variables -> Actions: add `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`.
+4. Settings -> Actions -> General -> Workflow permissions -> Read and write.
+5. Actions tab -> "UCC Price Monitor" -> Run workflow.
+   The first run sends the full report. Matching all laptops can take about 10 minutes;
+   anything not finished is continued by the next hourly run.
 
-## Test on your own PC
+## If a laptop is not matched
+Open `products.json` (the bot writes it). Add the link by hand under that laptop's `urls`:
+    "Ryans": "https://www.ryans.com/...."
+Manual links are kept. Add `"pinned": true` to stop the bot from ever dropping a laptop.
+
+## If a whole site shows "0 matched"
+The search page of that site may work differently. Send the warning message and one
+search page link to the developer, or add links by hand as above.
+
+## Test on your PC
     pip install -r requirements.txt
-    python monitor.py --dry-run      # prints messages, sends nothing
-    python tests/test_monitor.py     # offline logic tests
-
-## If a website shows "blocked"
-Some shops block GitHub's servers. The bot tells you once (after 2 failed checks).
-Fix: run the same bot on your own PC or a small VPS (same code), because home
-internet is usually not blocked.
+    python monitor.py --dry-run     # prints messages, sends nothing, saves nothing
+    python tests/test_monitor.py    # offline tests
 
 ## Notes
-- `state.json` stores the last prices. Do not delete it.
-- GitHub pauses scheduled runs if a repo has no activity for 60 days. Price changes
-  commit to `state.json`, which counts as activity.
+- `state.json` = last prices, `products.json` = laptop list and links. Do not delete them.
+- GitHub private repos have 2,000 free Actions minutes per month. Hourly use is about
+  1,000-1,500. If you run out, change `cron` in `.github/workflows/monitor.yml` to
+  `"0 */2 * * *"` (every 2 hours).
+- Apple laptops: part numbers often differ between shops (e.g. ZP/A), so they may stay "not matched".
