@@ -58,7 +58,7 @@
       "status": "OK",
       "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     }
   },
   "https://www.ucc.com.bd/MSI-Katana-15-HX-B14WGK-Intel-Core-i7-14th-Gen-14650HX-RTX-5070-8GB-Graphics-16GB-DDR5-RAM-15.6-Inch-QHD-165Hz-Gaming-Laptop?limit=100": {
@@ -139,7 +139,7 @@
       "status": "OK",
       "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     }
   },
   "https://www.ucc.com.bd/acer-aspire-7-a715-79g-intel-core-5-210h-16gb-ddr4-512-pcie-nvme-rtx-3050-4gb-graphics-fhd-ips-144hz-flame-black-gaming-laptop?limit=100": {
@@ -148,7 +148,7 @@
       "status": "OK",
       "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     }
   },
   "https://www.ucc.com.bd/apple-macbook-neo-13-inch-a18-pro-8gb-512gb-laptop-silver?limit=100": {
@@ -157,7 +157,7 @@
       "status": "OK",
       "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     }
   },
   "https://www.ucc.com.bd/apple-macbook-neo-13-inch-a18-pro-8gb-512gb-laptop-blush?limit=100": {
@@ -166,7 +166,7 @@
       "status": "OK",
       "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     }
   },
   "https://www.ucc.com.bd/apple-macbook-neo-blush-13-inch-a18-pro-8gb-unified-memory-256gb-ssd?limit=100": {
@@ -193,7 +193,7 @@
       "status": "OK",
       "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     }
   },
   "https://www.ucc.com.bd/acer-aspire-3-a325-53-i5-1334u-un34ysi024-laptop?limit=100": {
@@ -202,7 +202,7 @@
       "status": "OK",
       "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     },
     "Star Tech": {
       "price": 81900,
@@ -218,7 +218,7 @@
       "status": "OK",
       "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     },
     "Star Tech": {
       "price": 71900,
@@ -234,7 +234,7 @@
       "status": "OK",
       "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     },
     "Star Tech": {
       "price": 67900,
@@ -250,7 +250,7 @@
       "status": "OK",
       "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     },
     "Star Tech": {
       "price": 64500,
@@ -266,7 +266,7 @@
       "status": "OK",
       "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     },
     "Star Tech": {
       "price": 59000,
