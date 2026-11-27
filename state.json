@@ -1,7 +1,6 @@
 {
   "__meta__": {
     "warned": [
-      "blocked_Techland",
       "listing_short"
     ]
   },
@@ -29,10 +28,10 @@
     },
     "Techland": {
       "price": 77500,
-      "status": "BLOCKED",
-      "fails": 1,
+      "status": "OK",
+      "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     }
   },
   "https://www.ucc.com.bd/msi-vector-16-hx-ai-a2xwig-intel-core-ultra-9-275hx-rtx-5080-gaming-laptop?limit=100": {
