@@ -14,10 +14,10 @@
     },
     "Ryans": {
       "price": 77500,
-      "status": "ERROR",
-      "fails": 1,
+      "status": "OK",
+      "fails": 0,
       "alerted": false,
-      "sku_status": "UNVERIFIED"
+      "sku_status": "VERIFIED"
     },
     "Star Tech": {
       "price": 77500,
